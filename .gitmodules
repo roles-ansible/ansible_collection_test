@@ -1,0 +1,3 @@
+[submodule "roles/test"]
+	path = roles/test
+	url = https://github.com/roles-ansible/ansible_role_test.git
