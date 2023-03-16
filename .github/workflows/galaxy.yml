@@ -17,6 +17,6 @@ jobs:
 
 
       - name: "Publish Ansible"
-        uses: ansible/ansible-publish-action@v1
+        uses: ansible/ansible-publish-action@v1.0.0
         with:
           api_key: "${{ secrets.GALAXY_API_KEY }}"
