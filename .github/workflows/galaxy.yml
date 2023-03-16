@@ -15,8 +15,8 @@ jobs:
       - name: 'checkout git repo'
         uses: actions/checkout@v3
 
-      - name: 'release on galaxy'
-        uses: robertdebock/galaxy-action@1.2.1
+
+      - name: "Publish Ansible"
+        uses: ansible/ansible-publish-action@v1
         with:
-          galaxy_api_key: "${{ secrets.GALAXY_API_KEY }}"
-          git_branch: 'main'
+          api_key: "${{ secrets.GALAXY_API_KEY }}"
