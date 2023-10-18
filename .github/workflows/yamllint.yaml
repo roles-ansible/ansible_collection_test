@@ -14,7 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'checkout git repo'
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4.1.0
+        with:
+          lfs: true
+          submodules: true
+          fetch-depth: 0
 
       - name: 'Yamllint'
         uses: karancode/yamllint-github-action@v2.1.1
