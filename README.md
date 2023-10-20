@@ -8,3 +8,9 @@ This will include but is not limited to uploading releases to galaxy as well as 
 + Uploading collection to ansible galaxy
 + Linting via actions
 + All open source, see [LICENSE](LICENSE)
+
+## Galaxy
+https://galaxy.ansible.com/ui/repo/published/l3d/testing/
+
+## LICENSE
+[MIT](LICENSE)
