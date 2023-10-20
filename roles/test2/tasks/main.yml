@@ -12,3 +12,12 @@
   ansible.builtin.debug:
     msg: "Srsly guys, i's just a test. Go away!"
     verbosity: 2
+
+- name: Copy Template
+  become: true
+  ansible.builtin.template:
+    src: templates/hello.txt.j2
+    dest: /tmp/hello_world.txt
+    mode: 0644
+    owner: root
+    group: root
